@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height:100%;
+    position:relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    font-family: 'Antic Slab', serif;
+}
+
+h1 {
+    color: indigo;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#controls {
+    margin-bottom: 2em;
+}
+
+#images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0.2em;
+    width: 17em;
+    height: 10em;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#images img {
+    width: 7em;
+    margin: 0.1em;
+}
+
+#param *, #param form {
+    margin: auto;
+    text-align: center;
+}
+
+#param {
+    margin-top: 1em;
+    padding: 0.5em;
+    background: #f7f7f7;
+}
+
+#param form {
+    margin-top: 1em;
+}
+
+#param label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#param input {
+    width: 3em;
+}
+
+#param #startBtn {
+    width: 9em;
+    margin: 0.5em;
+    margin-top: 1em;
+    background: indigo;
+    border: none;
+    color: #f7f7f7;
+    padding: 0.25em;
+    border-radius: 5em;
+}
+
+/*#param input:nth-last-child(1) {
+    margin-top: 0em;
+}*/
+
+#param #startBtn:active {
+    font-weight: bold;
+}
+
+#canvas {
+    margin-left: 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+    #images {
+        height: 25em;
+        width: 16em;
+        overflow-y: scroll;
+    }
+
+    #images img:hover {
+        opacity: 0.6;
+    }
+
+    #param #startBtn:hover {
+        font-weight: bold;
+    }
+
+    #canvas {
+        margin: 1em;
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1200px) {
+    #canvas {
+        width: 100vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1200px) {
+    #canvas {
+        width: 80vw;
+    }
+}

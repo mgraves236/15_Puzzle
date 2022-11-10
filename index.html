@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="scripts/puzzle.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <title>15 Puzzle</title>
+</head>
+<body>
+    <h1>15-puzzle</h1>
+    <div id="game">
+        <div id="controls">
+            <h2>Wybór obrazka</h2>
+            <div id="images">
+                <img alt = "img1" id="img1" src="images/1-com.jpg">
+                <img alt = "img2" id="img2" src="images/2-com.jpg">
+                <img alt = "img3" id="img3" src="images/3-com.jpg">
+                <img alt = "img4" id="img4" src="images/4-com.jpg">
+                <img alt = "img5" id="img5" src="images/5-com.jpg">
+                <img alt = "img6" id="img6" src="images/6-com.jpg">
+                <img alt = "img7" id="img7" src="images/7-com.jpg">
+                <img alt = "img8" id="img8" src="images/8-com.jpg">
+                <img alt = "img9" id="img9" src="images/9-com.jpg">
+                <img alt = "img10" id="img10" src="images/10-com.jpg">
+                <img alt = "img11" id="img11" src="images/11-com.jpg">
+                <img alt = "img12" id="img12" src="images/12-com.jpg">
+            </div>
+            <div id="param">
+                <h2>Parametry gry</h2>
+                <form>
+                    <label for="col">Liczba kolumn</label>
+                    <input type="number" name="col" id="col" min="4"><br>
+                    <label for="row">Liczba wierszy</label>
+                    <input type="number" name="row" id="row" min="4"><br>
+                    <input type="button" id="startBtn" value="Rozpocznij grę!"><br>
+                </form>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+</html>
